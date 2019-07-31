@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import routers from './router';
+import routes from './routes';
 class App extends Component {
   render() {
     return (
       <Router>
         {
-          routers.map((r, ind) => {
+          routes.map((r, ind) => {
             if (r.exact) {
               return <Route key={ind} path={r.path} component={r.component} exact />;
             }
