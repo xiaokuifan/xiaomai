@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import posters from'./Posters.module.css';
 import Poster from './Poster.js';
-import ueel from '../../../src/images/ueel.jpg'
+let ueel = 'http://localhost:8081/images/ueel.jpg';
 
 export default class Posters extends Component {
     constructor(props) {
@@ -50,7 +50,7 @@ export default class Posters extends Component {
                 </div>
                 <div className={posters.pbot}>
                     <div className={posters.pbotl}>
-                        <img src={this.state.imgurl} className={posters.pbotli}/>
+                        <img src={this.state.data.imgurl} className={posters.pbotli}/>
                         <div className={posters.pbotld}>
                             <div className={posters.pbotldi}>{this.state.data.name}</div>
                             <div className={posters.pbotldi}>{this.state.data.price}</div>
