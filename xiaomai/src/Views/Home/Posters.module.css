@@ -1,11 +1,14 @@
 .posters {
-    width: 1180px;
-    height: 430px;
+   width: 1180px;
+   height: 430px;
    display: flex; 
    flex-direction: column;
    justify-content: space-around;
    align-items: center;
-   padding: 10px; 
+   padding: 10px;
+   border: 1px solid #EBEBEB;
+   margin: 0 auto;
+   margin-top: 15px;
 }
 .ptop {
    width: 1160px;
@@ -21,10 +24,10 @@
    line-height: 40px;
 }
 .ptopr {
-    width: 60px;
+   width: 80px;
    height: 40px;
    font-size: 14px;
-   text-align: center;
+   text-align: left;
    line-height: 40px;
    color: lightgray;
 }

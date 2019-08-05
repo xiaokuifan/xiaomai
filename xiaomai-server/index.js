@@ -20,15 +20,15 @@ extended: true
 app.use(bodyParser.json());
 //解决跨域问题
 app.use(function (req, res, next) {
-// 可以接受跨域的客户端传递过来的cookie
-//axios express设置跨域允许传递cookie
-res.header('Access-Control-Allow-Origin', '*');
-res.header('Access-Control-Allow-Headers', 'Content-Type');
-res.header('Access-Control-Allow-Methods', '*');
-// 支持cookie 必须指定具体的域名 
-res.header("Access-Control-Allow-Credentials", true);
-res.header('Content-Type', 'application/json;charset=utf-8');
-next();
+    // 可以接受跨域的客户端传递过来的cookie
+    //axios express设置跨域允许传递cookie
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    res.header('Access-Control-Allow-Methods', '*');
+    // 支持cookie 必须指定具体的域名 
+    res.header("Access-Control-Allow-Credentials", true);
+    res.header('Content-Type', 'application/json;charset=utf-8');
+    next();
 });
 // cookie和session
 let secret = 'H5190304';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import notablestyle from './notable.module.css'
+import notablestyle from './Notable.module.css'
 
 export default class Notable extends Component {
     render() {

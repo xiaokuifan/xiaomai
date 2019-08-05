@@ -40,7 +40,7 @@
     top:25px;
       left: -215px;
       z-index: 6;
-      display: none;
+      /* display: none; */
   }
   .gboxt {
     width: 0;
@@ -207,6 +207,13 @@ input:focus{
 .logintext{
    line-height: 30px;
    margin-left: 5px;
+}
+.logintext a{
+   color: black;
+   text-decoration: none;
+ }
+.logintext a:hover{
+    color: #FF1268;
 }
 .logintext:hover{
     color: #FF1268;
