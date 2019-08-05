@@ -40,7 +40,7 @@
     top:25px;
       left: -215px;
       z-index: 6;
-      /* display: none; */
+      display: none;
   }
   .gboxt {
     width: 0;
