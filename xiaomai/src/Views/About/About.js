@@ -3,6 +3,7 @@ import Navtwo from "../../Components/Navtwo";
 import AboutItem from "./AboutItem";
 import Paper from "./Paper";
 import about from "./About.module.css";
+import Poster from "../../Components/Poster";
 import Axios from "../../Module/Axios";
 
 
@@ -25,7 +26,7 @@ export default class About extends Component {
             this.setState({
                 data: res.data[0]
             })
-
+            this.getIntroduce(res.data[0].address);
         })
             .catch(err => {
                 console.log(err);
@@ -77,15 +78,15 @@ export default class About extends Component {
                     <div className={about.right}>
                         <Paper paper={this.state.data.billtype}></Paper>
                         <div className={about.rightb}>
-                            {/* <div className={about.rightbt}>为你推荐</div>
+                            <div className={about.rightbt}>为你推荐</div>
                             <div className={about.rightbb}>
-                                {this.getIntroduce()}
+                                
                                 {
                                     this.state.introduce.map((p, ind) => {
-                                        return <poster poster={p} key={ind}></poster>
+                                        return <Poster poster={p} key={ind}></Poster>
                                     })
                                 }
-                            </div> */}
+                            </div>
                         </div>
                     </div >
                 </div>

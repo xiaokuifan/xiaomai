@@ -7,13 +7,12 @@ export default class AboutItem extends Component {
         super(props)
         this.state = {
             count: 1,
-            num: ''
+            num: '',
+            pricelist: [],
+            timelist: []
         }
-    }
-
-    componentDidUpdate (){
-        console.log(this.props.aboutitem.timelist)
-        console.log(this.props.aboutitem.pricelist)
+        this.cadd=this.cadd.bind(this);
+        this.cmil=this.cmil.bind(this)
     }
 
     isShop(i) {
@@ -34,6 +33,55 @@ export default class AboutItem extends Component {
         }
     }
 
+    cTime(e) {
+        let n = this.state.timelist;
+        for (let a = 0; a < n.length; a++) {
+            n[a] = 0;
+        }
+        n[e] = 1;
+        this.setState({
+            timelist: n
+        })
+        n="";
+    }
+
+    cPrice(e) {
+        let n = this.state.pricelist;
+        for (let a = 0; a < n.length; a++) {
+            n[a] = 0;
+        }
+        n[e] = 1;
+        this.setState({
+            pricelist: n
+        })
+        n="";
+    }
+
+    cmil() {
+        let n = this.state.count;
+        if (n > 1) {
+            n--;
+            this.setState({
+                count: n
+            })
+        } else {
+            return;
+        }
+
+    }
+
+    cadd() {
+        let a = this.state.count;
+        let b = this.props.aboutitem.limittic;
+        if (a < b) {           
+            a++;
+            this.setState({
+                count: a
+            })
+        } else {
+            return;
+        }
+    }
 
     render() {
         return (
@@ -66,7 +114,14 @@ export default class AboutItem extends Component {
                         <div className={abouti.rightbtimel}>场次</div>
                         <div className={abouti.rightbtimer}>
                             {this.props.aboutitem.timelist.map((t, ind) => {
-                                return <div key={ind} className={abouti.rightbtimeri}>{t}</div>
+                                if (ind == 0) {
+                                    this.state.timelist.push(1);
+                                    return <div key={ind} className={this.state.timelist[ind] ? abouti.rightbtimericli : abouti.rightbtimeri} onClick={this.cTime.bind(this, ind)}>{t}</div>
+                                }
+                                else {
+                                    this.state.timelist.push(0);
+                                    return <div key={ind} className={this.state.timelist[ind] ? abouti.rightbtimericli : abouti.rightbtimeri} onClick={this.cTime.bind(this, ind)}>{t}</div>
+                                }
                             })}
                         </div>
                     </div>
@@ -75,7 +130,15 @@ export default class AboutItem extends Component {
                         <div className={abouti.rightbtimel}>票档</div>
                         <div className={abouti.rightbtimer}>
                             {this.props.aboutitem.pricelist.map((p, ind) => {
-                                return <div key={ind} className={abouti.rightbtimeri}>{p.price}</div>
+                                if (ind == 0) {
+                                    this.state.pricelist.push(1);
+                                    return <div key={ind} className={this.state.pricelist[ind] ? abouti.rightbtimericli : abouti.rightbtimeri} onClick={this.cPrice.bind(this, ind)}>{p.price}</div>
+                                }
+                                else {
+                                    this.state.pricelist.push(0);
+                                    return <div key={ind} className={this.state.pricelist[ind] ? abouti.rightbtimericli : abouti.rightbtimeri} onClick={this.cPrice.bind(this, ind)}>{p.price}</div>
+                                }
+
                             })}
                         </div>
                     </div>
@@ -84,9 +147,9 @@ export default class AboutItem extends Component {
                         <div className={abouti.rightbtimel}>数量</div>
                         <div className={abouti.rightbtimer}>
                             <div className={abouti.rightnumber}>
-                                <div className={abouti.rightnumbero}>-</div>
+                                <div className={this.state.count <= 1 ? abouti.rightnumberolim : abouti.rightnumbero} onClick={this.cmil}>-</div>
                                 <div className={abouti.rightnumberi}>{this.state.count}</div>
-                                <div className={abouti.rightnumbero}>+</div>
+                                <div className={this.state.count >= this.props.aboutitem.limittic ? abouti.rightnumberolim : abouti.rightnumbero} onClick={this.cadd}>+</div>
                             </div >
                         </div>
                     </div>

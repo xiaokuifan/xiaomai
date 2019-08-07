@@ -14,8 +14,19 @@ export default class Home extends Component {
         }
         this.showSwiper = this.showSwiper.bind(this);
     }
+
+    componentDidMount (){
+        Axios.get("/home/getnotable",{params:{aid:this.state.data}}).then(res=>{
+            this.setState({
+                data:res
+            })
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
+
     showSwiper(ev) {
-        console.log(ev.target)
         this.setState({
             data: ev.target.ad
         })
@@ -25,8 +36,8 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <Nav change={this.showSwiper}></Nav>
-                <Notable></Notable>
+                <Nav change={this.showSwiper} choce={this.state.data}></Nav>
+                {/* <Notable notable={this.state.data}></Notable> */}
                 <NavList></NavList>
                 <Posters title={"演唱会"}></Posters>
                 <Posters title={"话剧歌剧"}></Posters>

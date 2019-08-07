@@ -25,13 +25,13 @@
 }
 .leftbtb {
     width: 88px;
-    height: 30px;
+    height: 40px;
     text-align: center;
     line-height: 30px;
-    font-size: 16px;
+    font-size: 18px;
 }
 .leftbb {
-    width: 88px;
+    width: 880px;
 }
 .right {
     width: 320px;

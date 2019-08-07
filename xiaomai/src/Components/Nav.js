@@ -7,11 +7,7 @@ export default class nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            citys: ["1", "2", "3", "4", "5",
-                "1", "2", "3", "4", "5",
-                "1", "2", "3", "4", "5",
-                "1", "2", "3", "4", "5",
-                "1", "2", "3", "4", "5"]
+            citys: ["全部","北京","上海","广州","深圳","成都"]
         }
     }
 
@@ -35,10 +31,10 @@ export default class nav extends Component {
                             <div className={navstyle.gboxt}></div>
                             <div className={navstyle.gboxb}>
                                 <div className={navstyle.gboxbt}><div className={navstyle.gboxbl}>当前城市：</div>
-                                    <div className={navstyle.gboxbr} onClick={this.props.change}><div>1</div></div>
+                                    <div className={navstyle.gboxbr} onClick={this.props.change}><div>{this.props.choce}</div></div>
                                 </div>
                                 <div className={navstyle.gboxbt}><div className={navstyle.gboxbl}>热门城市：</div>
-                                    <div className={navstyle.gboxbr} onClick={this.props.change}><div>1</div><div>2</div></div>
+                                    <div className={navstyle.gboxbr} onClick={this.props.change}><div>成都</div><div>2</div></div>
                                 </div>
                                 <div className={navstyle.gboxbb}> <div className={navstyle.gboxblbig}>全部城市：</div>
                                     <div className={navstyle.gboxbrbig} onClick={this.props.change}>
