@@ -1,0 +1,151 @@
+.firstbox{
+    width: 100%;
+    height: 100px;
+    padding: 1px;
+}
+.imgbox{
+    width: 110px;
+    height: 50px;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+.imgbox img{
+    width: 110px;
+    height: 50px;
+}
+.secondbox{
+    width: 100%;
+    height: 600px;
+    background-color:#17073D;
+    display: flex;
+}
+.secondbox img{
+    width: 720px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 170px;
+}
+.loginbox{
+    width: 330px;
+    height: 330px;
+    background-color: #FFFFFF;
+    margin-top: 100px;
+    margin-left: 90px;
+}
+.loginboxfirst{ 
+    width: 100%;
+    height: 42px;
+    display: flex;
+}
+.loginboxfirstson{
+    width: 110px;
+    height: 42px;
+    text-align: center;
+    background-color: #E7E7E7;   
+    line-height: 42px;
+}
+.loginboxfirstson1{
+    width: 110px;
+    height: 42px;
+    text-align: center;
+    background-color: #FFFFFF;   
+    line-height: 42px;
+    color: #FF1268;
+    border-top: 2px solid #FF1268;
+    box-sizing: border-box;
+}
+.last{
+    width: 330px;
+    position: relative;
+}
+.input{
+    width: 280px;
+    height: 42px;
+    margin-top: 20px;
+    margin-left: 25px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    outline: none;
+}
+.input:focus{
+    border: 1px solid #FF1268;
+}
+.input::-webkit-input-placeholder {
+    font-size: 15px;
+}
+.logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #CCCCCC;
+    top: 21px;
+    left: 26px;
+}
+.logo img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo1{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #CCCCCC;
+    top: 83px;
+    left: 26px;
+}
+.logo1 img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.dl{
+    width: 280px;
+    height: 42px;
+    margin-top: 20px;
+    margin-left: 25px;
+    background:linear-gradient(to right,#F848A9,#FF1D76);
+    text-align: center;
+    line-height: 42px;
+    color: #FFFFFF;
+    border: 1px solid #FF1268;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.every{
+    width: 110px;
+    height: 22px;
+    margin-top: 15px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.everyson{
+    width: 22px;
+    height: 22px;
+}
+.everyson img{
+    width: 22px;
+    height: 22px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.bottom{
+    width: 130px;
+    margin-top: 15px;
+    margin-left: 175px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottomson{
+    font-size: 15px;
+}
+.bottomson a{
+    text-decoration: none;
+    color: #0088D6;
+}
+.bottomson Link{
+    text-decoration: none;
+}

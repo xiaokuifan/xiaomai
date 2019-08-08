@@ -1,0 +1,77 @@
+.posters {
+   width: 1200px;
+   height: 430px;
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px;
+   border: 1px solid #EBEBEB;
+   margin: 0 auto;
+   margin-top: 15px;
+}
+.ptop {
+   width: 1160px;
+   height: 40px;
+   display: flex; 
+   justify-content: space-between;
+}
+.ptopl {
+   width: 500px;
+   height: 40px;
+   font-size: 24px;
+   text-align: left;
+   line-height: 40px;
+}
+.ptopr {
+   width: 80px;
+   height: 40px;
+   font-size: 14px;
+   text-align: left;
+   line-height: 40px;
+   color: lightgray;
+}
+.pbot {
+   width: 1160px;
+   height: 365px;
+   display: flex; 
+   justify-content: space-between;
+}
+.pbotl {
+    width: 270px;
+    height: 365px;
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+}
+.pbotli {
+    width: 270px;
+    height: 365px;
+}
+.pbotld {
+    width: 270px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.pbotldi {
+    width: 270px;
+    height: 45px;
+    text-align: left;
+    line-height: 45px;
+    font-size: 16px;
+    color: white;
+}
+.pbotr {
+    width: 870px;
+    height: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}

@@ -1,0 +1,151 @@
+.abouti {
+    width: 860px;
+    display: flex;
+    padding:25px;
+}
+.left {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftt {
+    width: 270px;
+    height: 360px;
+    position: relative;
+}
+.leftti {
+    width: 270px;
+    height: 360px;
+}
+.leftts {
+    position: absolute;
+    top:0;
+    left:0;
+}
+.right {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.righttop {
+    width: 520px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.rightmid {
+    width: 350px;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.rightmidf {
+    width: 520px;
+    display: flex;
+    margin-bottom: 6px;
+}
+.rightremind {
+    width: 520px;
+    display: flex;
+    font-size: 12px;
+    background-color: lightgray;
+    margin-bottom:12px;
+}
+.rightremindl {
+    color: pink;
+}
+.rightremindrt {
+    color: black;
+}
+.rightremindrb {
+    color:gray;
+}
+.rightbremind {
+    display: flex;
+    font-size: 12px;
+    color:gray;
+    margin-bottom:12px;
+}
+.rightbremindl {
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 720;
+    border-radius: 50%;
+    background-color:gray;
+    color:white;
+}
+.rightbtime {
+    width: 520px;
+    display: flex;
+    margin-bottom: 12px;
+}
+.rightbtimel {
+    width: 52px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+}
+.rightbtimer {
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.rightbtimeri {
+   padding: 12px;
+   border: 1px solid lightgray;
+   font-size: 12px;
+   margin-left:12px;
+   margin-bottom:6px;
+}
+.rightbtimericli {
+    padding: 12px;
+    border: 1px solid pink;
+    background-color: pink;
+    color:white;
+    font-size: 12px;
+    margin-left:12px;
+    margin-bottom:6px;
+ }
+ .rightnumber {
+     width: 115px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border:1px solid lightgray;
+     margin-left:12px;
+ }
+ .rightnumbero {
+     width: 28px;
+     height: 28px;
+     text-align: center;
+     line-height: 28px;
+     border:1px solid gray;
+ }
+ .rightnumberolim {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border:1px solid lightgray;
+    color:lightgray;
+}
+ .rightnumberi {
+    width: 48px;
+    height: 28px;
+    text-align: center;
+     line-height: 28px;
+}
+.sub {
+    width: 200px;
+    height: 38px;
+    text-align: center;
+    line-height:  38px;
+    color: white;
+    background-color: purple;
+}

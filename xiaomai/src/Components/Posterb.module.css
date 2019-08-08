@@ -1,0 +1,46 @@
+.poster {
+   width: 330px;
+   display: flex;
+   justify-content: space-between;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+.pleft {
+   width: 155px;
+   height: 210px;
+}
+.plefti {
+    width: 155px;
+    height: 210px;
+}
+.pright {
+    width: 135px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.prightt {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.prighttt {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 700;
+}
+.prighttb {
+    height: 15px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 15px;
+    color: #999999;
+    margin-top: 10px;
+}
+.prightb {
+    font-size: 14px;
+    text-align: left;
+    color: #FF1268;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,9 @@
+.sign {
+    width: 50px;
+    height: 25px;
+    background-color: #FF1268;
+    border-bottom-right-radius: 7px;
+    text-align: center;
+    line-height: 25px;
+    color: aliceblue;
+}

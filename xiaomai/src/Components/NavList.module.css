@@ -1,0 +1,43 @@
+.father {
+   width: 1200px;
+   height: 110px;
+   display: flex; 
+   justify-content: space-between;
+   border: 1px solid #EBEBEB;
+   margin: 0 auto;
+   margin-top: 15px;
+}
+.son{
+    width: 120px;
+    height: 65px;
+    margin-top: 25px;
+    text-align: center;
+}
+.sonimg{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.sonimg img{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+.sonimg img:hover {
+ transform: scale(1.2);
+
+}
+.sontext{
+    color: #111111;
+    font-size: 17px;
+}
+.sontext:hover{
+    color: #FF1268;
+}
+.sontext a{
+    color: #111111;
+    font-size: 17px;
+}
+.sontext a:hover{
+    color: #FF1268;
+}

@@ -1,0 +1,53 @@
+.paper {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.son {
+    width: 255px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.stop {
+    width: 255px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.stopl { 
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    border: 1px solid pink;
+    color:pink;
+    font-size: 14px;
+    font-weight: 720;
+}
+.stopr {
+    font-size: 14px;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 600;
+}
+.sbot {
+    width: 255px;
+    height: 80px;
+    color:gray;
+    font-size: 12px;
+}
+.bk {
+    width: 255px;
+    height: 120px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bk img{
+    width: 120px;
+    height: 120px;
+}

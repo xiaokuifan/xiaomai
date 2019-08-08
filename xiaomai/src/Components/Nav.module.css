@@ -1,0 +1,138 @@
+.nav{
+    width: 100%;
+    height: 80px;
+    box-shadow: 2px 4px 6px #F6F6F6;
+  } 
+  .navson{
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+  }
+  .logo{
+      width: 100px;
+      height: 50px;
+      margin: auto 0;
+  }
+  .logo img{
+      width: 100%;
+      height: 100%;
+  }
+  .global{
+      height: 25px;
+      margin: auto 0;
+      margin-left: 50px;
+      display: flex;
+      position: relative;
+  }
+  .globalt {
+      display: flex;
+      height: 25px;
+  }
+  .position{
+      width: 18px;
+      height: 18px;
+      margin: auto 0;
+  }
+  .position img{
+    width: 100%;
+    height: 18px;
+    margin-top: -7px;
+}
+.text{
+    margin: auto 0;
+    font-size: 15px;
+}
+.downarrow{
+    width: 12px;
+    height: 10px;
+    margin: auto 0;
+    margin-left: 3px;
+}
+.navbar{
+    display: flex;
+    margin: auto 0;
+    margin-left: 40px;
+}
+.index{
+    color: #FF1268;
+}
+.page{
+    margin-left: 20px;
+}
+.page a{
+    color: black;
+}
+.page a:hover{
+    color: #FF1268;
+}
+.search{
+    margin: auto 0;
+    margin-left: 170px;
+    position: relative;
+    display: flex;
+}
+.input{
+    width: 300px;
+    height: 48px;
+    border-radius: 30px 0 0 30px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    outline: none;
+    background: #F8F8F8;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+input:focus{
+    border: 1px solid #FF1268;
+}
+.searchimg{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+}
+.inputnext{
+    width: 80px;
+    height: 48px;
+    background-color: #FF1268;
+    border-radius: 0 30px 30px 0;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.loginbox{
+    height:30px;
+    margin: auto 0;
+    margin-left: 47px;
+    display: flex;
+}
+.downbox{
+    height:30px;
+    margin: auto 0;
+    margin-left: 20px;
+    display: flex;
+}
+.loginimg{
+    width: 30px;
+    height: 30px;
+}
+.logintext{
+   line-height: 30px;
+   margin-left: 5px;
+}
+.logintext a{
+   color:#595959;
+   text-decoration: none;
+ }
+.logintext a:hover{
+    color: #FF1268;
+}
+.logintext:hover{
+    color: #FF1268;
+}
