@@ -149,3 +149,12 @@
     color: white;
     background-color: purple;
 }
+.sum {
+    width: 180px;
+    height: 40px;
+    font-size: 26px;
+    font-weight: 666;
+    color:deeppink;
+    text-align: center;
+    line-height: 40px;
+}
